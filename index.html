@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>  
+  <main class="sayt">
+    <header class="navbar">
+      <img src="./imgs/sneakers.png" alt="">
+
+      <ul class="uli">
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+
+      <nav class="tuglar">
+        <button class="savat" id="open-cart"><img src="./imgs/Group 14.png" alt=""></button>
+        <button class="profile"><img src="./imgs/Oval.png" alt=""></button>
+      </nav>
+    </header>
+
+    <p class="chiziq"></p>
+
+    <div class="cart-dropdown" id="cartDropdown">
+      <h1>Cart</h1>
+
+      <div class="cart-item">
+        <img src="./imgs/Rectangle (1).png" alt="Product" class="product-image">
+        <div class="details">
+          <p>Fall Limited Edition Sneakers</p>
+          <div class="ppp"><p class="narx">$125.00 x </p> <span id="cart-quantity">0</span> <strong>$<span id="cart-total">0.00</span></strong></div>
+        </div>
+      </div>
+      <button class="checkout-btn" id="checkout">Checkout</button>
+    </div>
+
+    <div class="box">
+      <div class="ramlar">
+        <img src="./imgs/Rectangle (1).png" alt="" class="rasmkatta" id="kattarasm">
+        <article class="snik">
+          <img src="./imgs/Rectangle (1).png" alt="" class="item" data-index="0">
+          <img src="./imgs/rasm3.jpg" alt="" class="item" data-index="1">
+          <img src="./imgs/rasm2.jpg" alt="" class="item" data-index="2">
+          <img src="./imgs/rasm1.jpg" alt="" class="item" data-index="3">
+        </article>
+
+        <div class="modal" id="modalcha">
+          <div class="modal-content">
+            <button class="close" id="yopil">✖</button>
+
+            <div class="slider">
+              <button class="prev" id="prevSlide">❮</button>
+              <img src="./imgs/Rectangle (1).png" alt="Slide 1" class="slide active">
+              <img src="./imgs/rasm3.jpg" alt="Slide 2" class="slide">
+              <img src="./imgs/rasm2.jpg" alt="Slide 3" class="slide">
+              <img src="./imgs/rasm1.jpg" alt="Slide 4" class="slide">
+              <button class="next" id="nextSlide">❯</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <h4 class="mavzu">Sneaker Company</h4>
+
+        <h1 class="fall">Fall Limited Edition Sneakers</h1>
+
+        <p class="text">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber
+          outer sole, they’ll withstand everything the weather can offer.</p>
+
+        <article class="sketka">
+          <aside>
+            <nav class="narxi">
+              <h1 class="benji" id="benji">$125.00</h1>
+              <button class="chegirma">50%</button>
+            </nav>
+            <del style="color: grey;">$250</del>
+          </aside>
+
+          <div class="vaqt" id="vaqt">
+            <div id="days">00<span>KUN</span></div>
+            <span>:</span>
+            <div id="hours">00<span>SOAT</span></div>
+            <span>:</span>
+            <div id="minutes">00<span>MINUT</span></div>
+            <span>:</span>
+            <div id="seconds">00<span>SEKUND</span></div>
+          </div>
+        </article>
+
+        <div id="meningModal" class="modal">
+          <div class="modal-contentt">
+            <p>Sketkalarimizning vaqti tugadi!</p>
+            <button class="modal-button" id="closeModal">Yopish</button>
+          </div>
+        </div>
+
+        <nav class="push">
+          <nav class="pop">
+            <button class="menus" id="decrease">-</button>
+            <h1 class="raqam" id="quantity">0</h1>
+            <button class="pelus" id="increase">+</button>
+          </nav>
+          <button class="tugma" id="add-to-cart"> <img src="./imgs/Shape (1).png" alt=""> Add to cart</button>
+        </nav>
+      </aside>
+    </div>
+  </main>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
